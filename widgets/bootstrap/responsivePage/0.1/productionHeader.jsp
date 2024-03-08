@@ -116,7 +116,7 @@
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300" rel="stylesheet" type="text/css">
 		<link href="<%=ESAPI.encoder().encodeForHTML(Cloudfront.getDNS()) %>/bootstrap/css/font-awesome.<%=ESAPI.encoder().encodeForHTML(Config.getValue("font-awesome.version"))%>.css.gz" type="text/css" rel="stylesheet" media="screen">
 		<link href="<%=ESAPI.encoder().encodeForHTML(Cloudfront.getDNS()) %>/bootstrap/css/bootstrap.min.<%=ESAPI.encoder().encodeForHTML(Config.getValue("bootstrap.version"))%>.css.gz" type="text/css" rel="stylesheet" media="screen">
-		<link href="<%=ESAPI.encoder().encodeForHTML(Cloudfront.getDNS()) %>/freemium/css/pv/cl-bootstrap_z-adjustments.<%=ESAPI.encoder().encodeForHTML(Config.getValue("cl-bootstrap.z-adjustments.version"))%>.min.css" type="text/css" rel="stylesheet" media="screen">
+		<link href="<%=ESAPI.encoder().encodeForHTML(Cloudfront.getDNS()) %>/freemium/css/pv/cl-bootstrap_z-adjustments.<%=ESAPI.encoder().encodeForHTML(Config.getValue("cl-bootstrap.z-adjustments.version"))%>.min.css.gz" type="text/css" rel="stylesheet" media="screen">
 
 		<!-- [ Favicon ] -->
 		<link rel="shortcut icon" href="/ttsvr/freemium/images/pv/favicon.ico" type="image/x-icon">
