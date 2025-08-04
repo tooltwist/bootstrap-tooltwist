@@ -8,7 +8,7 @@
 					metrics regarding visitor usage on this product and other media. We may share cookie and analytics 
 					information with third parties for the purposes of advertising. By continuing to use our website, you 
 					consent to cookies being used. See our 
-					<a target="_blank" rel="noopener noreferrer" href="https://www.corelogic.com.au/about-us/privacy-policy">privacy policy</a> 
+					<a target="_blank" rel="noopener noreferrer" href="https://www.cotality.com/au/legal/privacy-policy">privacy policy</a> 
 					to find out more.</p>
 					<button 
             id="acceptCookieButton"

@@ -86,10 +86,28 @@ project.ext.isSnapshot = version.endsWith("-SNAPSHOT")
 // Include jars for the artifactory plugin
 buildscript {
     repositories {
-        maven { url 'https://jcenter.bintray.com' }
+        maven {
+            url "https://tooltwist.jfrog.io/artifactory/tooltwist-all-in-one"
+            credentials {
+                username = "${ARTIFACTORY_USER}"
+                password = "${ARTIFACTORY_PASSWORD}"
+            }
+        }
+        mavenCentral()
     }
+
     dependencies {
-        classpath(group: 'org.jfrog.buildinfo', name: 'build-info-extractor-gradle', version: '2.0.9')
+        classpath(group: 'org.jfrog.buildinfo', name: 'build-info-extractor-gradle', version: '2.0.12')
+    }
+}
+
+repositories {
+    maven {
+        url "https://tooltwist.jfrog.io/artifactory/tooltwist-all-in-one"
+                credentials {
+                username = "${ARTIFACTORY_USER}"
+                password = "${ARTIFACTORY_PASSWORD}"
+        }
     }
 }
 
