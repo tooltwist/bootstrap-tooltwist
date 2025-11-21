@@ -9,6 +9,7 @@
 <%@page import="com.myrp.util.WebUtil"%>
 <%@page import="com.myrp.util.CookiesUtil"%>
 <%@page import="com.myrp.util.Cloudfront"%>
+<%@page import="com.myrp.util.PropertyUtil"%>
 <%@page import="tooltwist.wbd.Navpoint"%>
 <%@page import="com.dinaa.misc.AltLang"%>
 <%@page import="tooltwist.wbd.WbdProductionHelper"%>
@@ -155,7 +156,7 @@
 			for(String map_navpoint_enabled : map_navpoints_enabled) {
 				if(map_navpoint_enabled.equals(currentNavpointId)) {
 		%>
-		<script src="https://maps.googleapis.com/maps/api/js?v=3&client=gme-corelogicsolutions&signature=7Js3Ymvq0Ye7IbvSJ6FaXh-9FVs=&sensor=false&channel=freemium&libraries=places"></script>
+		<script src="https://maps.googleapis.com/maps/api/js?v=3&key=<%=PropertyUtil.getProperty("google.api.key") %>&signature=7Js3Ymvq0Ye7IbvSJ6FaXh-9FVs=&sensor=false&channel=freemium&libraries=places"></script>
 		<script src="<%=ESAPI.encoder().encodeForHTML(Cloudfront.getDNS()) %>/freemium/script/markerwithlabel.min.js.gz"></script>
 		<%
 				}	
