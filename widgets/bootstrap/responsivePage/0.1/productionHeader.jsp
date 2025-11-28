@@ -156,7 +156,7 @@
 			for(String map_navpoint_enabled : map_navpoints_enabled) {
 				if(map_navpoint_enabled.equals(currentNavpointId)) {
 		%>
-		<script src="https://maps.googleapis.com/maps/api/js?v=3&key=<%=PropertyUtil.getProperty("google.api.key") %>&loading=async&channel=freemium&libraries=places"></script>
+		<script src="https://maps.googleapis.com/maps/api/js?key=<%=PropertyUtil.getProperty("google.api.key") %>&channel=freemium&libraries=places"></script>
 		<script src="<%=ESAPI.encoder().encodeForHTML(Cloudfront.getDNS()) %>/freemium/script/markerwithlabel.min.js.gz"></script>
 		<%
 				}	
